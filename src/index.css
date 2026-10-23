@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --crystal-emerald: #00C896;
+    --deep-emerald: #064E3B;
+    --crystal-mint: #A7F3D0;
+    --glass-white: #F8FFFC;
+    --dark-text: #102A24;
+    --subtle-silver: #DDEBE5;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #F8FFFC;
+    color: #102A24;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Glassmorphism & Crystal Accents */
+.glass-panel {
+  background: rgba(248, 255, 252, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 12px 35px -8px rgba(6, 78, 59, 0.06), 0 0 0 1px rgba(0, 200, 150, 0.08);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(221, 235, 229, 0.8);
+  box-shadow: 0 8px 30px -6px rgba(6, 78, 59, 0.05);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(0, 200, 150, 0.35);
+  box-shadow: 0 16px 36px -6px rgba(0, 200, 150, 0.12), 0 0 0 1px rgba(0, 200, 150, 0.18);
+}
+
+.glass-nav {
+  background: rgba(248, 255, 252, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(221, 235, 229, 0.85);
+}
+
+.crystal-glow {
+  background: radial-gradient(circle at 50% 0%, rgba(0, 200, 150, 0.15), transparent 70%);
+}
+
+.emerald-gradient-btn {
+  background: linear-gradient(135deg, #00C896 0%, #064E3B 100%);
+  color: #ffffff;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 14px rgba(0, 200, 150, 0.25);
+}
+
+.emerald-gradient-btn:hover {
+  filter: brightness(1.05);
+  box-shadow: 0 6px 20px rgba(0, 200, 150, 0.35);
+}
+
+.emerald-outline-btn {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 200, 150, 0.4);
+  color: #064E3B;
+  transition: all 0.2s ease;
+}
+
+.emerald-outline-btn:hover {
+  background: rgba(167, 243, 208, 0.25);
+  border-color: #00C896;
+}
+
+/* Crystal Facet Shimmer & Refraction */
+.crystal-border {
+  border: 1px solid rgba(0, 200, 150, 0.4);
+  box-shadow: 0 0 25px rgba(0, 200, 150, 0.15), inset 0 1px 1px rgba(255, 255, 255, 0.4);
+}
+
+.crystal-facet-pattern {
+  background-image: 
+    radial-gradient(circle at 85% 15%, rgba(0, 200, 150, 0.22) 0%, transparent 45%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, transparent 60%);
+}
+
+/* Custom scrollbar for glass aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8FFFC;
+}
+::-webkit-scrollbar-thumb {
+  background: #DDEBE5;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A7F3D0;
+}
+

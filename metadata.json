@@ -1,0 +1,6 @@
+{
+  "name": "Shop Limit – Amazon Affiliate Product Reviews",
+  "description": "Shop smart and stay within your limit with transparent product reviews, buying guides, and curated Amazon recommendations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
